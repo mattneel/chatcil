@@ -1,14 +1,15 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'mycomponent',
-  outputTargets:[
-    {
-      type: 'dist'
-    },
-    {
-      type: 'www',
-      serviceWorker: null
-    }
-  ]
+	namespace: 'mycomponent',
+	outputTargets: [
+		{
+			type: 'dist'
+		},
+		{
+			type: 'www',
+			dir: '../priv/static',
+			serviceWorker: null
+		}
+	]
 };
